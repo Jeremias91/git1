@@ -1,0 +1,72 @@
+Jeremías Gabriel Vergara Ceballos
+DNI 44605995
+
+1)Expliciten cómo están transitando la instancia de ingreso, qué experiencias positivas pueden comentar y cuáles obstáculos encontraron.
+	La instancia de ingreso me pareció muy interesante. Valioso los aportes en cuanto en cuanto a mitologías como SCRUM. Me resulto muy importante e informativa la charla de presidente del Consejo de Ciencias Informáticas de la Provincia de Córdoba, Eduardo Console, sobre desarrollo de software y cómo funciona el mundo laboral. Las clases en general me parecieron muy necesarias para poder adecuarme a esta modalidad y forma de trabajo, en particular porque al ser de otra localidad concurrir a las clases presenciales implica planificaciones y actividades que no estaba acostumbrado.
+
+	Justamente los viajes, horarios de colectivos que a veces suponían retirarme antes del final de la clase y otras veces tuve que optar por la virtualidad por la imposibilidad de viajar. Por esto también considero una ventaja  la virtualidad que bien trabajada no empeora en nada las posibilidades de aprendizaje aunque entiendo que no siempre es posible.
+
+
+2)Identificar, teniendo en cuenta el documento de Metodologías de estudio aplicadas al software, tres de las habilidades que se mencionan y que estas aplicando para realizar esta actividad.
+
+	Motivación: “La motivación es la destreza cognitiva de dirigir nuestra energía hacia un objetivo en concreto.” Considero esta habilidad  como un punto de partida esencial para cualquier objetivo que se quiera realizar. Me siento motivado personalmente porque me interesa la temática de esta carrera y además siento que desde el grupo de profesores y el personal en general me motivan a seguir adelante. 
+
+	Planificación: “Esta facultad mental es aquella que diseña los pasos que vamos a dar y las decisiones que vamos a tomar en un espacio de tiempo determinado.” Emprender una carrera superior exige organizar muchos aspectos de nuestra vida y justamente es esa planificación la que permitirá aprovechar el tiempo, nuestros recursos y habilidades. También la realización de este trabajo demanda en su medida de una planificación.
+
+	Razonamiento: “Es la habilidad cognitiva que nos permite sacar conclusiones a través de la percepción y la comprensión” Es innegable la importancia del razonamiento en cada una de las actividades que se realizan en muchas disciplinas y sobre todo en esta carrera. Fue necesario razonar para poder responder cada de los puntos de este trabajo, porque hubo que percibir y comprender cada una de las ideas y conceptos tratados en este curso, por ultimo hubo que razonar todas las palabras para escribir este texto.
+
+	
+
+3)Agregar los comandos de git que han utilizado para esta actividad.
+
+Conectar con el drive
+
+[ ]
+!git config --global user.email "jeremiasgabrielvergara@gmail.com"
+!git config --global user.name "Jeremias Vergara Ceballos"
+
+!ls
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+%cd /content/drive/MyDrive/GIt1/git1
+
+!git clone https://github.com/Jeremias91/git1.git
+
+!git status
+
+!git add main.py
+
+!python main.py
+
+!git commit -m "1er commit"
+
+!git add /content/drive/MyDrive/GIt1/git1/README.md
+
+!python main.py
+
+!git add .
+
+!git commit -m "1er commit"
+
+# TOKEN DEL PERFIL DE GIT
+# buscamos el token desde el sitio de git.
+# despues de ingresar a git conusuario y contraseña, nos vamos al perfil arriba a la derecha se desplega un menu y a settings
+# EN el menu de la izq escroleamos (abajo) hasta DEVELOPER SETTINGS y entramos ahi.
+# En el nuevo menu izq vamos a "Personal access tokens"  y debemos generar un token, en la pantalla siguiente debera especificar un nombre al TOKEN y chequee todos los checkbox, ya tenemos generado uno generamos otro.
+# copiamos el token y lo pegamos en el INPUT que se muestra al ejecutar esta celda y ENTER.
+from getpass import getpass
+password = getpass("Enter TOKEN: ")
+
+#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
+
+#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
+
+# ELIMINA EL REPO LOCAL si la sentencia anterior informa que ya existe
+!git remote rm origin 
+
+#!git remote add origin https://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@github.com/isbh2023desoft/git_github.git
+!git remote add origin https://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@github.com/Jeremias91/git1.git
+
+!git push origin main
